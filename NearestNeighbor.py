@@ -32,4 +32,5 @@ accuracy = ((predicted_labels == testing_labels).sum())/(len(predicted_labels))
 print("#, True, Predicted")
 for i in range(len(predicted_labels)):
     print("%d, %s, %s" % (i+1, testing_labels[i], predicted_labels[i]))
+# Print accuracy
 print("Accuracy: %.2f%%" % (accuracy*100))
